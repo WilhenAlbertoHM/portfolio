@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Charis+SIL:wght@700&display=swap");
+
+:root {
+    --background-color-black: #1e1e1e;
+    --lightgray: #b1a8a0;
+    --white: #ffffff;
+    --linkedin-blue: #1e90ff;
+    --instagram-pink: #e4405f;
+}
+
+* {
+    font-family: "Charis SIL", serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color-black);
+}
