@@ -23,9 +23,6 @@ const About = () => {
                     <a href="https://www.linkedin.com/in/wilhenalbertohm/" className="aboutSocialIcon">
                         <i className="fab fa-linkedin" id="linkedin-icon"></i>
                     </a>
-                    <a href="https://www.instagram.com/albertohuimei/" className="aboutSocialIcon">
-                        <i className="fab fa-instagram" id="instagram-icon"></i>
-                    </a>
                 </div>
             </div>
         </div>

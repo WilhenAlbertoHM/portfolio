@@ -71,10 +71,6 @@
     color: var(--white);
 }
 
-#instagram-icon {
-    color: var(--instagram-pink);
-}
-
 @media screen and (max-width: 600px) {   
     .aboutSocialIcon {
         margin: 0.5rem 0;
