@@ -2,14 +2,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 100vh;
     flex-direction: column;
-    color: white;
-    font-size: 2rem;
     text-align: center;
-    background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926");
+    font-family: "Cabin", sans-serif;
+}
+
+.intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../../public/intro-isc.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: blur(7px);
+    z-index: -1;
+    outline: 3px solid var(--darkgray);
 }
 
 .introTitle, .introText {
-    background-color: transparent;
+    margin: 0.5rem;
+}
+
+.introTitle {
+    color: var(--white);
+    font-size: 5rem;
+}
+
+.introText {
+    color: var(--orange);
+    font-style: italic;
+    font-size: 4rem;
 }

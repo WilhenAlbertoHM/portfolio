@@ -4,8 +4,8 @@ import "./Intro.css";
 const Intro = () => {
     return (
         <div className="intro">
-            <h1 className="introTitle">Welcome to my portfolio!</h1>
-            <p className="introText">I am a full stack developer with a passion for creating beautiful and functional websites.</p>
+            <h1 className="introTitle">Wilhen Alberto Hui Mei</h1>
+            <h3 className="introText">ML / Software Engineer</h3>
         </div>
     );
 };

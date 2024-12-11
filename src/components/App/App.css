@@ -1,16 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Charis+SIL:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
 
 :root {
-    --background-color-black: #1e1e1e;
-    --lightgray: #b1a8a0;
-    --white: #ffffff;
-    --linkedin-blue: #1e90ff;
-    --instagram-pink: #e4405f;
+    --black: #151515;
+    --darkgray: #1E1E1E;
+    --lightgray: #D0D0D2;
+    --white: #F3F3F3;
+    --orange: #FFBF00;
+    --linkedin-blue: #1E90FF;
+    --instagram-pink: #E4405F;
 }
 
-* {
-    font-family: "Charis SIL", serif;
+body {
+    font-family: "Montserrat", sans-serif;
+    background: var(--darkgray);
     margin: 0;
     padding: 0;
-    background-color: var(--background-color-black);
 }
