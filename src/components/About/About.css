@@ -5,8 +5,19 @@
 
 .aboutTitle {
     color: var(--orange);
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
+    align-items: center;
+}
+
+.aboutTitle .aboutTitleIcon {
+    height: 35px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.aboutTitleIcon {
+    padding: 0 0.5rem;
 }
 
 .aboutPicContainer {

@@ -9,11 +9,14 @@ const About = () => {
                     <img src="../../../public/me.png" alt="Me" className="aboutPic" />
                 </div>
                 <div className="aboutContent">
-                    <h1 className="aboutTitle">About Me</h1>
+                    <h1 className="aboutTitle">
+                        About Me 
+                        <img className="aboutTitleIcon" src="../../../public/waving-hand.svg"/>
+                    </h1>
                     <p className="aboutText">
-                        Hola! My name is Wilhen Alberto Hui Mei, and I have <span style={{ color: "var(--orange)", fontWeight: "bold" }}>1 year </span> 
+                        Hola! I’m Wilhen Alberto Hui Mei, and I have <span style={{ color: "var(--orange)", fontWeight: "bold" }}>1 year </span> 
                         of experience in <span style={{ color: "var(--orange)", fontWeight: "bold" }}>building AI and ML applications</span>. 
-                        I’m passionate about using spoken and programming languages to create a positive impact around us!
+                        I’m focused in using spoken and programming languages to create a positive impact around us.
                     </p>
                 </div>
                 <div className="aboutSocial">

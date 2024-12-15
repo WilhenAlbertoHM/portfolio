@@ -3,7 +3,7 @@ import "./App.css";
 import NavBar from "../NavBar/NavBar.jsx";
 import Intro from "../Intro/Intro.jsx";
 import About from "../About/About.jsx";
-import Experience from "../Experience/Experience.jsx";
+import ExperienceList from "../Experience/ExperienceList.jsx";
 import ProjectList from "../Projects/ProjectList.jsx";
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
             <NavBar />
             <Intro />
             <About />
-            <Experience />  
+            <ExperienceList />  
             <ProjectList />
         </div>
     );

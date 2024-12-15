@@ -1,0 +1,82 @@
+.experienceListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px auto;
+    width: 80%;
+    position: relative;
+}
+
+.experienceListContainer::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: var(--orange);
+}
+
+.experienceListTitle {
+    font-size: 3rem;
+    color: var(--orange);
+    text-align: center;
+}
+
+.experience {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding: 0 20px;
+}
+
+.experienceLogo {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.experienceLogo img {
+    width: 100%;
+    height: auto;
+}
+
+.experienceContent {
+    background-color: var(--black);
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.experienceTitle {
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--lightgray);
+}
+
+.experienceCompany {
+    font-size: 1.1rem;
+    color: var(--orange);
+    margin: 5px 0;
+}
+
+.experienceDuration {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: var(--lightgray);
+}
+
+.experiencePoints {
+    list-style-type: disc;
+    color: var(--lightgray);
+    font-size: 1rem;
+}
+
+.experiencePoints li {
+    margin: 5px 0;
+}
