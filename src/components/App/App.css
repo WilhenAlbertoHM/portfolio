@@ -13,7 +13,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    background: var(--darkgray);
+    background: linear-gradient(to left, rgb(40, 40, 40), rgb(23, 23, 23), rgb(40, 40, 40));
     margin: 0;
     padding: 0;
 }

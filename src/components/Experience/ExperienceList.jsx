@@ -5,7 +5,7 @@ import Experience from "./Experience.jsx";
 const experiences = [
     {
         id: 1,
-        logo: "https://via.placeholder.com/150",
+        logo: "../../../moma.png",
         title: "ML Engineer/Computational Chemistry Intern",
         company: "MOMA Therapeutics",
         duration: "June 2024 - August 2024",
@@ -27,15 +27,17 @@ const experiences = [
     },
     {
         id: 2,
-        logo: "https://via.placeholder.com/150",
+        logo: "../../../public/ids.jpg",
         title: "ML Research Fellow",
-        company: "Institute of Diversity Sciences | University of Massachusetts Boston",
+        company: "Institute of Diversity Sciences | UMass Boston",
         duration: "June 2023 - May 2024",
         points: [
             "Built RNN and CNN models using a large dataset of 6,000 videos to predict personality traits from facial expressions \
             based on the OCEAN personality test, reducing mean-squared error by 30% for realistic VR character creation",
+            
             "Presented findings to 500+ attendees at the MassURC hosted by UMass Amherst, and CSM 8th Annual Student Success \
             Showcase hosted by UMass Boston, Oracle, and Sloan Foundation, earning the Best Poster Design award",
+            
             "Co-authored 'An Iterative Approach to Build a Semantic Dataset for Facial Expression of Personality,' which was \
             submitted to the 17th Annual ACM SIGGRAPH Conference Motion, Interaction, and Games (MIG)"
         ]

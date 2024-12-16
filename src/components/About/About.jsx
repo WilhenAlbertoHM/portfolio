@@ -14,8 +14,8 @@ const About = () => {
                         <img className="aboutTitleIcon" src="../../../public/waving-hand.svg"/>
                     </h1>
                     <p className="aboutText">
-                        Hola! I’m Wilhen Alberto Hui Mei, and I have <span style={{ color: "var(--orange)", fontWeight: "bold" }}>1 year </span> 
-                        of experience in <span style={{ color: "var(--orange)", fontWeight: "bold" }}>building AI and ML applications</span>. 
+                        Hola! I’m Wilhen Alberto Hui Mei, and I have 1 year 
+                        of experience in building AI and ML applications. 
                         I’m focused in using spoken and programming languages to create a positive impact around us.
                     </p>
                 </div>

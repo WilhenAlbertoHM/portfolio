@@ -6,7 +6,7 @@
     flex-direction: column;
     text-align: center;
     font-family: "Cabin", sans-serif;
-    text-shadow: 8px 0px 5px var(--black);
+    text-shadow: 7px 3px 2px var(--black);
 }
 
 .intro::before {

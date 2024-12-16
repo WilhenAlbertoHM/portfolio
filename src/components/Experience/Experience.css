@@ -1,20 +1,11 @@
 .experienceListContainer {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin: 20px auto;
+    gap: 2rem;
+    margin: 2rem auto;
     width: 80%;
     position: relative;
-}
-
-.experienceListContainer::before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background-color: var(--orange);
+    left: 2rem;
 }
 
 .experienceListTitle {
@@ -27,36 +18,59 @@
     display: flex;
     align-items: flex-start;
     position: relative;
-    padding: 0 20px;
+    padding: 1rem 8rem;
+}
+
+.experience::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 60px;
+    bottom: 20px;
+    width: 0.7rem;
+    border-radius: 10rem;
+    background: linear-gradient(to bottom, var(--lightgray), var(--darkgray));
+}
+
+.experience::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 50px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: var(--darkgray);
+    background: var(--orange);
+}
+
+.experienceHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experienceTitle {
+    text-wrap: balance;
+    font-size: 2rem;
+    color: var(--lightgray);
 }
 
 .experienceLogo {
-    flex-shrink: 0;
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-}
-
-.experienceLogo img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    max-width: 30rem;
+    border-radius: 2rem;
+    object-fit: contain;
+    margin: 0 1rem;
 }
 
 .experienceContent {
     background-color: var(--black);
-    padding: 15px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.experienceTitle {
-    font-size: 1.5rem;
-    margin: 0;
-    color: var(--lightgray);
+    padding: 3rem;
+    border-radius: 50px;
+    box-shadow: 1rem 1rem var(--orange);
+    text-wrap: balance;
 }
 
 .experienceCompany {
@@ -78,5 +92,11 @@
 }
 
 .experiencePoints li {
-    margin: 5px 0;
+    margin: 2rem 0;
+    line-height: 1.5;
+}
+
+.highlight {
+    font-weight: bold;
+    color: var(--orange);
 }
