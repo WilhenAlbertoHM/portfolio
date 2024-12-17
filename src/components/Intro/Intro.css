@@ -16,10 +16,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("../../../public/intro-isc.jpg");
+    background-image: url("../../../public/coolsunset.jpg");
     background-position: center;
     background-size: cover;
-    filter: blur(10px);
+    filter: blur(6px) brightness(0.7) contrast(1.1) grayscale(0.1);
     z-index: -1;
     outline: 3px solid var(--darkgray);
 }
@@ -30,11 +30,11 @@
 
 .introTitle {
     color: var(--white);
-    font-size: 5rem;
+    font-size: 5.5rem;
 }
 
 .introText {
     color: var(--orange);
     font-style: italic;
-    font-size: 4rem;
+    font-size: 4.5rem;
 }

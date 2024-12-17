@@ -2,7 +2,7 @@ import React from "react";
 import "./Experience.css";
 
 const keywordsToHighlight = [
-    "model", "70%", "accuracy,", "GNN", "PyTorch", "AWS", "EC2,", "Bedrock",
+    "model", "protein", "targets", "hit", "finding", "70%", "accuracy,", "GNN", "PyTorch", "AWS", "EC2,", "Bedrock",
     "classification", "system", "Claude", "3", "Opus", "LangChain,",
     "feedback", "UI", "Retool", "SQL", "chatbot",
     "regression", "testing", "LLM/RAG",
@@ -30,7 +30,7 @@ const Experience = ({ logo, title, company, duration, points }) => {
                                     className={keywordsToHighlight.includes(word) ? "highlight" : ""}>
                                     {word}{" "} 
                                 </span>
-                            )) }
+                            ))}
                         </li>
                     ))}
                 </ul>
