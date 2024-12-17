@@ -11,7 +11,7 @@ const NavBar = () => {
             <div className="navLinks">
                 <Link className="navLink" to="intro" smooth={true} duration={600}>Home</Link>
                 <Link className="navLink" to="about" smooth={true} duration={600}>About</Link>
-                <Link className="navLink" to="experience" smooth={true} duration={600}>Experience</Link>
+                <Link className="navLink" to="experienceList" smooth={true} duration={600}>Experience</Link>
                 <Link className="navLink" to="projectList" smooth={true} duration={600}>Projects</Link>
             </div>
         </header>

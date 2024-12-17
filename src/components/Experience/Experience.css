@@ -12,6 +12,7 @@
     font-size: 3rem;
     color: var(--orange);
     text-align: center;
+    padding-top: 4rem;
 }
 
 .experience {
@@ -69,7 +70,7 @@
     background-color: var(--black);
     padding: 3rem;
     border-radius: 50px;
-    box-shadow: 1rem 1rem var(--orange);
+    /* box-shadow: 1rem 1rem var(--orange); */
     text-wrap: balance;
 }
 

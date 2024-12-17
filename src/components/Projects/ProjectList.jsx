@@ -1,12 +1,37 @@
 import React from "react";
-import "./ProjectList.css";
+import Project from "./Project.jsx";
+import "./Project.css";
+
+const projects = [
+    {
+        id: 1,
+        image: "https://via.placeholder.com/150",
+        title: "Project 1",
+        description: "Description 1"
+    },
+    {
+        id: 2,
+        image: "https://via.placeholder.com/150",
+        title: "Project 2",
+        description: "Description 2"
+    },
+    {
+        id: 3,
+        image: "https://via.placeholder.com/150",
+        title: "Project 3",
+        description: "Description 3"
+    }
+]
 
 const ProjectList = () => {
     return (
-        <div id="projectList">
-            <h1>Projects</h1>
-            <p>Project 1</p>
-            <p>Project 2</p>
+        <div className="projectList">
+            <h1 className="projectListTitle">Projects</h1>
+            <div className="projectListContainer">
+                { projects.map((project) => (
+                    <Project key={project.id} {...project}></Project>
+                ))}
+            </div>
         </div>
     );
 };
