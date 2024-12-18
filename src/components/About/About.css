@@ -44,7 +44,7 @@
     max-width: 800px;
     background-color: var(--black);
     color: var(--lightgray);
-    border-radius: 100px;
+    border-radius: 8rem;
     box-shadow: 1rem 1rem var(--orange);
 }
 
@@ -81,14 +81,4 @@
 
 #github-icon {
     color: var(--white);
-}
-
-@media screen and (max-width: 600px) {   
-    .aboutSocialIcon {
-        margin: 0.5rem 0;
-    }
-    
-    .aboutSocialIcon i {
-        transform: scale(1.8);
-    }
 }

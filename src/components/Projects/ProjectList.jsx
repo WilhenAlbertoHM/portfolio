@@ -20,6 +20,24 @@ const projects = [
         image: "https://via.placeholder.com/150",
         title: "Project 3",
         description: "Description 3"
+    },
+    {
+        id: 4,
+        image: "https://via.placeholder.com/150",
+        title: "Project 1",
+        description: "Description 1"
+    },
+    {
+        id: 5,
+        image: "https://via.placeholder.com/150",
+        title: "Project 2",
+        description: "Description 2"
+    },
+    {
+        id: 6,
+        image: "https://via.placeholder.com/150",
+        title: "Project 3",
+        description: "Description 3"
     }
 ]
 
@@ -29,7 +47,9 @@ const ProjectList = () => {
             <h1 className="projectListTitle">Projects</h1>
             <div className="projectListContainer">
                 { projects.map((project) => (
-                    <Project key={project.id} {...project}></Project>
+                    <Project 
+                        key={project.id} {...project}>
+                    </Project>
                 ))}
             </div>
         </div>
