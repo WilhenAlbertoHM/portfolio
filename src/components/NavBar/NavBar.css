@@ -11,7 +11,7 @@
     justify-content: space-around; 
     align-items: center;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     white-space: nowrap;
     background-color: var(--black);
 }
@@ -54,4 +54,17 @@
     .navLink {
         margin: 0.5rem 0;
     }
+}
+
+.aboutSocialIcon i {
+    transform: scale(2);
+    margin: 0 1.5rem;
+}
+
+#linkedin-icon {
+    color: var(--linkedin-blue);
+}
+
+#github-icon {
+    color: var(--white);
 }
