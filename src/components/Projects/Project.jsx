@@ -4,9 +4,12 @@ import "./Project.css";
 const Project = ({ image, title, description }) => {
     return (
         <div className="projectCard">
-            <img src={image} className="projectCardPic"/>
-            <h2 className="projectCardTitle">{title}</h2>
-            <p className="projectCardText">{description}</p>
+            <div className="projectCardImage" style={{ backgroundImage: `url(${ image })` }}>
+                <div className="projectCardDescription">
+                    <h2 className="projectCardTitle">{ title }</h2>
+                    <p>{ description }</p>
+                </div>
+            </div>
         </div>
     );
 }

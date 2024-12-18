@@ -5,6 +5,7 @@ import Intro from "../Intro/Intro.jsx";
 import About from "../About/About.jsx";
 import ExperienceList from "../Experience/ExperienceList.jsx";
 import ProjectList from "../Projects/ProjectList.jsx";
+import PictureList from "../Gallery/PictureList.jsx";
 
 const App = () => {
     return (
@@ -14,6 +15,7 @@ const App = () => {
             <About />
             <ExperienceList />  
             <ProjectList />
+            <PictureList />
         </div>
     );
 }

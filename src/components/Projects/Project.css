@@ -4,13 +4,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
-    padding: 1rem;
-}
-
-.projectListTitle {
-    font-size: 3rem;
-    color: var(--orange);
-    text-align: center;
+    padding: 2rem;
 }
 
 .projectListContainer {
@@ -22,29 +16,67 @@
     position: relative;
 }
 
-.projectCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem;
-    padding: 1rem;
-    width: 25rem;
-    height: 30rem;
-    background-color: var(--black);
-    color: var(--lightgray);
-    border-radius: 8rem;
-    box-shadow: 1rem 1rem var(--orange);
-}
-
-.projectCard:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s;
-    
+.projectListTitle {
+    font-size: 3rem;
+    color: var(--orange);
 }
 
 .projectCardTitle {
     font-size: 1.5rem;
     color: var(--orange);
-    margin: 1rem;
+}
+
+.projectCard {
+    position: relative;
+    width: 25rem;
+    height: 30rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.projectCardImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease;
+    z-index: 1; 
+}
+
+.projectCardTitle {
+    font-size: 1.5rem;
+    color: var(--orange);
+}
+
+.projectCardDescription {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--black);
+    color: var(--lightgray);
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: scale(1.1); 
+    z-index: 2; 
+}
+
+.projectCard:hover .projectCardImage {
+    opacity: 1;
+}
+
+.projectCard:hover .projectCardDescription {
+    opacity: 1; 
+    transform: scale(1);
 }

@@ -1,0 +1,34 @@
+.pictureList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pictureListTitle {
+    font-size: 1.5rem;
+    color: var(--orange);
+    margin: 1rem;
+}
+
+.pictureCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    width: 25rem;
+    height: 30rem;
+    background-color: var(--black);
+    color: var(--lightgray);
+    border-radius: 8rem;
+    box-shadow: 1rem 1rem var(--orange);
+}
+
+.pictureCard:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
