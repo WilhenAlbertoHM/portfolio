@@ -10,9 +10,10 @@
 .projectListContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 2rem;
     margin: 2rem auto;
+    padding: 1rem;
     position: relative;
 }
 
@@ -27,8 +28,11 @@
 }
 
 .projectCard {
+    flex: 1 1 calc(33.33% - 4rem);
+    max-width: calc(33.33% - 10rem);
+    box-sizing: border-box;
     position: relative;
-    width: 25rem;
+    width: 20rem;
     height: 30rem;
     border-radius: 2rem;
     overflow: hidden;
@@ -43,7 +47,7 @@
     height: 100%;
     background-size: cover;
     background-position: center;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.2s ease;
     z-index: 1; 
 }
 
