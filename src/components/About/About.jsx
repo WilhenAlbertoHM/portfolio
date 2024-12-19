@@ -6,7 +6,7 @@ const About = () => {
         <div className="about">
             <div className="aboutCard">
                 <div className="aboutPicContainer">
-                    <img src="../../../public/me.png" alt="Me" className="aboutPic" />
+                    <img src="../../../public/about/me.png" alt="Me" className="aboutPic" />
                 </div>
                 <div className="aboutContent">
                     <h1 className="aboutTitle">

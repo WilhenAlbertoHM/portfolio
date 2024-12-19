@@ -28,7 +28,7 @@ const Experience = ({ logo, title, company, duration, points }) => {
                                 <span 
                                     key={idx} 
                                     className={keywordsToHighlight.includes(word) ? "highlight" : ""}>
-                                    {word}{" "} 
+                                    {word + " "} 
                                 </span>
                             ))}
                         </li>

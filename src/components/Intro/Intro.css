@@ -16,7 +16,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("../../../public/coolsunset.jpg");
+    background-image: url("../../../public/Intro/coolsunset.jpg");
     background-position: center;
     background-size: cover;
     filter: blur(6px) brightness(0.7) contrast(1.1) grayscale(0.1);

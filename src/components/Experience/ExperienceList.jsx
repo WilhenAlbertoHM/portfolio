@@ -5,7 +5,7 @@ import Experience from "./Experience.jsx";
 const experiences = [
     {
         id: 1,
-        logo: "../../../moma.png",
+        logo: "../../../Experience/moma.png",
         title: "ML Engineer/Computational Chemistry Intern",
         company: "MOMA Therapeutics",
         duration: "June 2024 - August 2024",
@@ -27,7 +27,7 @@ const experiences = [
     },
     {
         id: 2,
-        logo: "../../../public/ids.jpg",
+        logo: "../../../public/Experience/ids.jpg",
         title: "ML Research Fellow",
         company: "Institute of Diversity Sciences | UMass Boston",
         duration: "June 2023 - May 2024",

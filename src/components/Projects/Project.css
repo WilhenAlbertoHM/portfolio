@@ -1,4 +1,5 @@
 .projectList {
+    flex-direction: column;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -29,39 +30,31 @@
 
 .projectCard {
     flex: 1 1 calc(33.33% - 4rem);
-    max-width: calc(33.33% - 10rem);
+    max-width: calc(33.33% - 4rem);
     box-sizing: border-box;
     position: relative;
-    width: 20rem;
-    height: 30rem;
+    width: 15rem;
+    height: 25rem;
     border-radius: 2rem;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .projectCardImage {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: block;
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center;
     transition: opacity 0.2s ease;
-    z-index: 1; 
+    z-index: 1;
 }
 
-.projectCardTitle {
-    font-size: 1.5rem;
-    color: var(--orange);
-}
-
-.projectCardDescription {
+.projectCardDescriptionContainer {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,11 +69,47 @@
     z-index: 2; 
 }
 
-.projectCard:hover .projectCardImage {
-    opacity: 1;
+.projectCardTitle {
+    font-size: 1.5rem;
+    color: var(--orange);
 }
 
-.projectCard:hover .projectCardDescription {
+.projectCardDescription {
+    font-size: 1rem;
+    color: var(--lightgray);
+    text-wrap: balance;
+    margin: 0 2rem;
+    padding: 0 2rem;
+    line-height: 1.5;
+}
+
+.projectCardTechStack {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    gap: 1rem;
+    margin: 0.5rem 0;
+    padding: 1rem 0;
+
+}
+
+.projectCardTech {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgba(255, 98, 0, 0.6);
+    border-radius: 0.5rem;
+    text-wrap: balance;
+    padding: 0 1rem;
+    margin: 0 1rem;
+}
+
+.projectCard:hover .projectCardDescriptionContainer {
     opacity: 1; 
     transform: scale(1);
+    z-index: 1;
+}
+
+.highlight {
+    font-weight: bold;
+    color: var(--orange);
 }

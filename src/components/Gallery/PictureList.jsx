@@ -14,7 +14,7 @@ const pictures = [
 
 const PictureList = () => {
     return (
-        <div className="pictureList">
+        <div className="pictureList" id="gallery">
             <h1 className="pictureListTitle">Gallery</h1>
             {pictures.map((picture) => {
                 return <Picture key={picture.id} image={picture.image} />;
