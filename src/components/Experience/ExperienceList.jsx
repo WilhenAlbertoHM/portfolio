@@ -40,7 +40,7 @@ const experiences = [
             
             "Co-authored 'An Iterative Approach to Build a Semantic Dataset for Facial Expression of Personality,' which was \
             submitted to the 17th Annual ACM SIGGRAPH Conference Motion, Interaction, and Games (MIG)"
-        ]
+        ],
     }
 ]
 

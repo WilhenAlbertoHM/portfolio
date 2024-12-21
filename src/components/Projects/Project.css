@@ -62,45 +62,46 @@
     text-align: center;
     background-color: var(--black);
     color: var(--lightgray);
-    font-size: 1.2rem;
     opacity: 0;
     transition: opacity 0.2s ease, transform 0.2s ease;
     transform: scale(1.1); 
     z-index: 2; 
+    cursor: pointer;
 }
 
 .projectCardTitle {
     font-size: 1.5rem;
-    color: var(--orange);
+    color: var(--white);
 }
 
 .projectCardDescription {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: var(--lightgray);
     text-wrap: balance;
-    margin: 0 2rem;
-    padding: 0 2rem;
-    line-height: 1.5;
+    margin: 0 0.5rem;
+    padding: 0 1.2rem;
+    line-height: 1.3;
 }
 
 .projectCardTechStack {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1rem;
     margin: 0.5rem 0;
-    padding: 1rem 0;
-
+    padding: 0.5rem 0 1rem 0;
 }
 
 .projectCardTech {
     font-size: 1rem;
     font-weight: bold;
     background-color: rgba(255, 98, 0, 0.6);
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     text-wrap: balance;
-    padding: 0 1rem;
-    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    color: var(--white);
+    box-sizing: border-box;
 }
 
 .projectCard:hover .projectCardDescriptionContainer {
@@ -112,4 +113,12 @@
 .highlight {
     font-weight: bold;
     color: var(--orange);
+}
+
+.moreProjects {
+    font-size: 2rem;
+    color: var(--white);
+    margin: 2rem 0;
+    text-align: center;
+    cursor: pointer;
 }

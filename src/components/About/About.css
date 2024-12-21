@@ -12,7 +12,7 @@
     max-width: 800px;
     background-color: var(--black);
     color: var(--lightgray);
-    border-radius: 8rem;
+    border-radius: 4rem;
     box-shadow: 1rem 1rem var(--orange);
 }
 
