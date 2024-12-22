@@ -61,3 +61,18 @@
     line-height: 1.5;
     text-wrap: balance;
 }
+
+@media (max-width: 1200px) {
+    .aboutCard {
+        flex-direction: column;
+    }
+
+    .aboutPicContainer {
+        margin-right: 0;
+    }
+    
+    .aboutPic {
+        width: 50%;
+        height: 50%;
+    }
+}

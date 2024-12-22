@@ -1,0 +1,23 @@
+.techStackList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.techStackListTitle {
+    font-size: 3rem;
+    color: var(--orange);
+    text-align: center;
+}
+
+.techStackListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    position: relative;
+}
