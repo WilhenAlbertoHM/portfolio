@@ -20,11 +20,21 @@ const projects = [
         description: "A RAG application that can answer questions about a YouTube video. \
         The system receives a link, creates a transcription, and uses it as context before answering the user",
         keywords: ["RAG", "application", "answer", "questions", "YouTube", "video."],
-        techStack: ["Python", "Llama 3.2", "LangChain", "Streamlit"],
+        techStack: ["Python", "Llama 3.2", "LangChain", "Streamlit", "Pinecone"],
         github: "https://github.com/WilhenAlbertoHM/VideoAskRAG"
     },
     {
         id: 3,
+        image: "../../../public/Projects/sloanresearch.png",
+        title: "Sentiment Analysis With Gaze",
+        description: "RNN and CNN models using a large dataset of 6,000 videos to predict personality traits, \
+        from facial expressions based on the OCEAN personality test.",
+        keywords: ["RNN", "CNN", "6,000", "videos", "predict", "personality", "traits", "facial", "expressions", "OCEAN", "personality", "test."],
+        techStack: ["Python", "TensorFlow", "Keras", "scikit-learn"],
+        github: "https://github.com/WilhenAlbertoHM/Sentiment-Analysis-With-Gaze/"
+    },
+    {
+        id: 4,
         image: "../../../public/Projects/deep-learning-projects.png",
         title: "Deep Learning Projects",
         description: "A collection of deep learning projects made with TensorFlow. \
@@ -38,17 +48,6 @@ const projects = [
         github: "https://github.com/CS460GraphBox/GraphBox"
     },
     {
-        id: 4,
-        image: "../../../public/Projects/graphbox.png",
-        title: "GraphBox",
-        description: "A Roblox game that consists of 2 custom games: GObby! and BoxDash. \
-        Beware of where you jump in GObby!, or else you will fall and plummet to your demise. \
-        Beware of where you land in BoxDash, the lava will set you on fire and meet your demise.",
-        keywords: ["Roblox", "game", "GObby!", "BoxDash."],
-        techStack: ["Roblox Studio", "Blender", "Lua"],
-        github: "https://github.com/CS460GraphBox/GraphBox"
-    },
-    {
         id: 5,
         image: "../../../public/Projects/graphbox.png",
         title: "GraphBox",
@@ -56,19 +55,19 @@ const projects = [
         Beware of where you jump in GObby!, or else you will fall and plummet to your demise. \
         Beware of where you land in BoxDash, the lava will set you on fire and meet your demise.",
         keywords: ["Roblox", "game", "GObby!", "BoxDash."],
-        techStack: ["Roblox Studio", "Lua"],
+        techStack: ["Roblox Studio", "Lua", "Blender"],
         github: "https://github.com/CS460GraphBox/GraphBox"
     },
     {
         id: 6,
-        image: "../../../public/Projects/graphbox.png",
-        title: "GraphBox",
-        description: "A Roblox game that consists of 2 custom games: GObby! and BoxDash. \
-        Beware of where you jump in GObby!, or else you will fall and plummet to your demise. \
-        Beware of where you land in BoxDash, the lava will set you on fire and meet your demise.",
-        keywords: ["Roblox", "game", "GObby!", "BoxDash."],
-        techStack: ["Roblox Studio", "Lua"],
-        github: "https://github.com/CS460GraphBox/GraphBox"
+        image: "../../../public/Projects/cs460.png",
+        title: "Graphics Projects",
+        description: "A collection of graphics projects made in CS460. \
+        Projects include creating 3D scenes using cubes and torus knots, loading 3D-printed models to render in WebGL, \
+        and many more.",
+        keywords: ["collection", "graphics", "projects", "CS460", "3D", "scenes", "cubes", "torus", "knots,", "3D-printed", "models", "WebGL,"],
+        techStack: ["JavaScript", "WebGL", "D3.js", "Three.js", "XTK.js", "Blender"],
+        github: "https://github.com/WilhenAlbertoHM/cs460student/tree/main"
     },  
 ]
 
@@ -82,7 +81,7 @@ const ProjectList = () => {
                 ))}
             </div>
             <p className="moreProjects">
-                More projects can be found <a href="" style={{color: "orange"}}>here</a>
+                More projects can be found <a href="" style={{color: "orange", fontWeight: "bold", textUnderlineOffset: "5px"}}>here</a>
             </p>
         </div>
     );

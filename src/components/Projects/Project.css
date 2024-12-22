@@ -33,9 +33,9 @@
     max-width: calc(33.33% - 4rem);
     box-sizing: border-box;
     position: relative;
-    width: 15rem;
+    width: 20rem;
     height: 25rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     overflow: hidden;
 }
 
@@ -46,6 +46,13 @@
     background-size: cover;
     transition: opacity 0.2s ease;
     z-index: 1;
+}
+
+.projectCardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .projectCardDescriptionContainer {
@@ -85,11 +92,11 @@
 
 .projectCardTechStack {
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 1rem;
-    margin: 0.5rem 0;
-    padding: 0.5rem 0 1rem 0;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 .projectCardTech {
@@ -98,10 +105,11 @@
     background-color: rgba(255, 98, 0, 0.6);
     border-radius: 0.4rem;
     text-wrap: balance;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.3rem;
     margin: 0;
     color: var(--white);
     box-sizing: border-box;
+    outline: orangered;
 }
 
 .projectCard:hover .projectCardDescriptionContainer {
