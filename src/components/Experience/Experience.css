@@ -1,26 +1,34 @@
+.experienceList {
+    padding: 4rem 0;
+}
+
 .experienceListContainer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin: 2rem auto;
-    width: 70%;
+    width: 75%;
     position: relative;
-    left: 2rem;
-    padding-bottom: 5rem;
 }
 
 .experienceListTitle {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--orange);
     text-align: center;
-    padding-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.experienceListTitleIcon {
+    height: 4rem;
+    width: auto;
+    vertical-align: middle;
 }
 
 .experience {
     display: flex;
     align-items: stretch;
     position: relative;
-    padding: 1rem 10rem;
+    padding: 0 10rem;
 }
 
 .experience::before {
@@ -38,7 +46,7 @@
     content: "";
     position: absolute;
     left: -8px;
-    top: 50px;
+    top: 20px;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -60,16 +68,16 @@
 .experienceLogo {
     width: auto;
     max-width: 30rem;
-    border-radius: 4rem;
+    border-radius: 1rem;
     object-fit: contain;
     margin: 0 1rem;
 }
 
 .experienceContent {
-    background-color: var(--black);
+    background: var(--blacktotransparent);
     padding: 3rem;
     text-wrap: balance;
-    border-radius: 2rem;
+    border-radius: 2em;
 }
 
 .experienceCompany {
@@ -118,6 +126,7 @@
     }
 
     .experience::after {
+        top: 2rem;
         left: -2.75rem;
         width: 2rem;
         height: 2rem;

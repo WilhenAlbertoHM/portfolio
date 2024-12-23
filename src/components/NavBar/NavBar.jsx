@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 const NavBar = () => {
     return (
         <header className="navBar">
-            <a href="" className="navLogo">
+            <a href="./" className="navLogo">
                 <h2>W A H M</h2>
             </a>
             <div className="navLinks">
@@ -25,6 +25,6 @@ const NavBar = () => {
             </div>
         </header>
     );
-}
+};
 
 export default NavBar;

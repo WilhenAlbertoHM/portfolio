@@ -74,14 +74,18 @@ const projects = [
 const ProjectList = () => {
     return (
         <div className="projectList">
-            <h1 className="projectListTitle">Projects</h1>
+            <h1 className="projectListTitle">
+                Projects <img className="projectListTitleIcon" src="https://www.svgrepo.com/show/262132/light-bulb.svg" />
+            </h1>
             <div className="projectListContainer">
                 { projects.map((project) => (
                     <Project key={project.id} {...project} />
                 ))}
             </div>
             <p className="moreProjects">
-                More projects can be found <a href="" style={{color: "orange", fontWeight: "bold", textUnderlineOffset: "5px"}}>here</a>
+                More projects can be found <a href="https://github.com/WilhenAlbertoHM?tab=repositories" 
+                                              style={{color: "var(--orange)", fontWeight: "bold", textUnderlineOffset: "5px"}}>here
+                                           </a>
             </p>
         </div>
     );

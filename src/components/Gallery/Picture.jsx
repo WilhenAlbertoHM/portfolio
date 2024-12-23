@@ -4,7 +4,9 @@ import "./Picture.css";
 const Picture = ({ image }) => {
     return (
         <div className="pictureCard">
-            <div className="pictureCardImage" style={{ backgroundImage: `url(${ image })` }}></div>
+            <div className="pictureCardImage" 
+                style={{ backgroundImage: `url(${ image })` }}>
+            </div>
         </div>
     );
 }

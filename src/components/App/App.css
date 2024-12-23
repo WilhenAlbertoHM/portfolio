@@ -3,6 +3,8 @@
 
 :root {
     --black: #151515;
+    --blacktransparent: #3b3b3baa;
+    --blacktotransparent: linear-gradient(-45deg, var(--blacktransparent), black);
     --darkgray: #1E1E1E;
     --lightgray: #D0D0D2;
     --white: #F3F3F3;

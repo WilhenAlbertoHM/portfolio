@@ -10,8 +10,7 @@ const About = () => {
                 </div>
                 <div className="aboutContent">
                     <h1 className="aboutTitle">
-                        About Me 
-                        <img className="aboutTitleIcon" src="../../../public/about/waving-hand.svg"/>
+                        About Me <img className="aboutTitleIcon" src="../../../public/about/waving-hand.svg"/>
                     </h1>
                     <p className="aboutText">
                         Hola! I’m Wilhen Alberto Hui Mei, and I have 1 year 

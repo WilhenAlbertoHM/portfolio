@@ -1,6 +1,5 @@
 .about {
     padding: 5rem 0;
-    margin-bottom: 5rem;
 }
 
 .aboutCard {
@@ -10,7 +9,7 @@
     margin: 2rem auto;
     padding: 2rem;
     max-width: 800px;
-    background-color: var(--black);
+    background: var(--blacktotransparent);
     color: var(--lightgray);
     border-radius: 4rem;
     box-shadow: 1rem 1rem var(--orange);
@@ -18,19 +17,15 @@
 
 .aboutTitle {
     color: var(--orange);
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
     align-items: center;
 }
 
-.aboutTitle .aboutTitleIcon {
-    height: 35px;
+.aboutTitleIcon {
+    height: 4rem;
     width: auto;
     vertical-align: middle;
-}
-
-.aboutTitleIcon {
-    padding: 0 0.5rem;
 }
 
 .aboutPicContainer {

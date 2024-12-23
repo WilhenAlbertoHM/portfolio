@@ -47,7 +47,9 @@ const experiences = [
 const ExperienceList = () => {
     return (
         <div className="experienceList">
-            <h1 className="experienceListTitle">Work Experience</h1>
+            <h1 className="experienceListTitle">
+                Work Experience <img className="experienceListTitleIcon" src="../../../public/Experience/monitor.svg" />
+            </h1>
             <div className="experienceListContainer">
                 { experiences.map((experience) => (
                     <Experience key={experience.id} {...experience} />

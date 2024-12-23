@@ -16,8 +16,8 @@ const App = () => {
             <About />
             <ExperienceList />  
             <ProjectList />
-            <PictureList />
             <TechStackList />
+            <PictureList />
         </div>
     );
 }
