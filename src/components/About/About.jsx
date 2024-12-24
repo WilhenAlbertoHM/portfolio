@@ -6,11 +6,11 @@ const About = () => {
         <div className="about">
             <div className="aboutCard">
                 <div className="aboutPicContainer">
-                    <img src="../../../public/about/me.png" alt="Me" className="aboutPic" />
+                    <img src="About/me.png" alt="Me" className="aboutPic" />
                 </div>
                 <div className="aboutContent">
                     <h1 className="aboutTitle">
-                        About Me <img className="aboutTitleIcon" src="../../../public/about/waving-hand.svg"/>
+                        About Me <img className="aboutTitleIcon" src="About/waving-hand.svg"/>
                     </h1>
                     <p className="aboutText">
                         Hola! I’m Wilhen Alberto Hui Mei, and I have 1 year 

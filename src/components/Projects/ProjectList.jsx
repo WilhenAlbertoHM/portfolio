@@ -5,7 +5,7 @@ import "./Project.css";
 const projects = [
     {
         id: 1,
-        image: "../../../public/Projects/faithful.png",
+        image: "Projects/faithful.png",
         title: "Faithful AI",
         description: "A Christian chatbot designed to help users learn more about the Bible and grow in their faith. \
         It responds in English, Spanish, French, and German in a passionate and energetic tone",
@@ -25,7 +25,7 @@ const projects = [
     },
     {
         id: 3,
-        image: "../../../public/Projects/sloanresearch.png",
+        image: "Projects/sloanresearch.png",
         title: "Sentiment Analysis With Gaze",
         description: "RNN and CNN models using a large dataset of 6,000 videos to predict personality traits, \
         from facial expressions based on the OCEAN personality test.",
@@ -35,7 +35,7 @@ const projects = [
     },
     {
         id: 4,
-        image: "../../../public/Projects/deep-learning-projects.png",
+        image: "Projects/deep-learning-projects.png",
         title: "Deep Learning Projects",
         description: "A collection of deep learning projects made with TensorFlow. \
         Projects include a CNN model predicting pneumonia, COVID-19, or no illness from X-ray images, \
@@ -49,7 +49,7 @@ const projects = [
     },
     {
         id: 5,
-        image: "../../../public/Projects/graphbox.png",
+        image: "Projects/graphbox.png",
         title: "GraphBox",
         description: "A Roblox game that consists of 2 custom games: GObby! and BoxDash. \
         Beware of where you jump in GObby!, or else you will fall and plummet to your demise. \
@@ -60,7 +60,7 @@ const projects = [
     },
     {
         id: 6,
-        image: "../../../public/Projects/cs460.png",
+        image: "Projects/cs460.png",
         title: "Graphics Projects",
         description: "A collection of graphics projects made in CS460. \
         Projects include creating 3D scenes using cubes and torus knots, loading 3D-printed models to render in WebGL, \

@@ -5,7 +5,7 @@ import Experience from "./Experience.jsx";
 const experiences = [
     {
         id: 1,
-        logo: "../../../Experience/moma.png",
+        logo: "Experience/moma.png",
         title: "ML Engineer/Computational Chemistry Intern",
         company: "MOMA Therapeutics",
         duration: "June 2024 - August 2024",
@@ -27,7 +27,7 @@ const experiences = [
     },
     {
         id: 2,
-        logo: "../../../public/Experience/ids.jpg",
+        logo: "Experience/ids.jpg",
         title: "ML Research Fellow",
         company: "Institute of Diversity Sciences | UMass Boston",
         duration: "June 2023 - May 2024",
@@ -48,7 +48,7 @@ const ExperienceList = () => {
     return (
         <div className="experienceList">
             <h1 className="experienceListTitle">
-                Work Experience <img className="experienceListTitleIcon" src="../../../public/Experience/monitor.svg" />
+                Work Experience <img className="experienceListTitleIcon" src="Experience/monitor.svg" />
             </h1>
             <div className="experienceListContainer">
                 { experiences.map((experience) => (
