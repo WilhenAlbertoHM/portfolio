@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar.jsx";
 import Intro from "./components/Intro/Intro.jsx";
