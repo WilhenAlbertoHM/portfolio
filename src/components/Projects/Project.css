@@ -35,11 +35,11 @@
 
 .projectCard {
     flex: 1 1 calc(33.33% - 2rem);
-    max-width: calc(33.33% - 2rem);
+    max-width: calc(33.33% - 1rem);
     box-sizing: border-box;
     position: relative;
     width: 20rem;
-    height: 25rem;
+    height: 35rem;
     border-radius: 1rem;
     overflow: hidden;
 }
