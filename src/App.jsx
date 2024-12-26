@@ -14,7 +14,7 @@ import "./App.css";
 const App = () => {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-        gsap.utils.toArray(".experienceList, .projectList, .techStackList, .pictureList").forEach((section) => {
+        gsap.utils.toArray(".about, .experienceList, .projectList, .techStackList, .pictureList").forEach((section) => {
             gsap.from(section, {
                 opacity: 0,
                 y: 50,
@@ -26,7 +26,7 @@ const App = () => {
                     toggleActions: "play none none reverse",
                     markers: false
                 }
-            });
+            })
         });
     }, []);
 
