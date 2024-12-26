@@ -33,6 +33,7 @@ const techStacks = [
         title: "Infrastructure",
         items: [
             { name: "MySQL", icon: "TechStack/DatabasesNCloud/mysql.svg" },
+            { name: "SQLite", icon: "TechStack/DatabasesNCloud/sqlite.svg" },
             { name: "MongoDB", icon: "TechStack/DatabasesNCloud/mongodb.svg" },
             { name: "Pinecone", icon: "TechStack/DatabasesNCloud/pinecone.svg" },
             { name: "AWS EC2", icon: "TechStack/DatabasesNCloud/ec2.svg" },
