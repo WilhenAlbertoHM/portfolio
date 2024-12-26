@@ -20,7 +20,7 @@ const pictures = [
 
 const PictureList = () => {
     return (
-        <div>
+        <div className="gallery">
             <h1 className="pictureListTitle">
                 Gallery <img className="pictureListTitleIcon" src="https://www.svgrepo.com/show/503863/camera.svg" />
             </h1>
