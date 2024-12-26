@@ -20,17 +20,22 @@ const pictures = [
 
 const PictureList = () => {
     return (
-        <ImageList variant="masonry" cols={3} gap={8}>
-        {pictures.map((item) => (
-            <ImageListItem key={item.image}>
-            <img
-                srcSet={`${item.image}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                src={`${item.image}?w=248&fit=crop&auto=format`}
-                loading="lazy"
-            />
-            </ImageListItem>
-        ))}
-        </ImageList>
+        <div>
+            <h1 className="pictureListTitle">
+                Gallery <img className="pictureListTitleIcon" src="https://www.svgrepo.com/show/503863/camera.svg" />
+            </h1>
+            <ImageList variant="masonry" cols={3} gap={8}>
+            {pictures.map((item) => (
+                <ImageListItem key={item.image}>
+                <img
+                    srcSet={`${item.image}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                    src={`${item.image}?w=248&fit=crop&auto=format`}
+                    loading="lazy"
+                />
+                </ImageListItem>
+            ))}
+            </ImageList>
+        </div>
     );
 };
 
