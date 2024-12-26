@@ -1,8 +1,6 @@
 import React from "react";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
 import Project from "./Project.jsx";
-import "./Project.css"
+import "./Project.css";
 
 const projects = [
     {
@@ -75,33 +73,21 @@ const projects = [
 
 const ProjectList = () => {
     return (
-        // <div className="projectList">
-        //     <h1 className="projectListTitle">
-        //         Projects <img className="projectListTitleIcon" src="https://www.svgrepo.com/show/262132/light-bulb.svg" />
-        //     </h1>
-        //     <div className="projectListContainer">
-        //         { projects.map((project) => (
-        //             <Project key={project.id} {...project} />
-        //         ))}
-        //     </div>
-        //     <p className="moreProjects">
-        //         More projects can be found <a href="https://github.com/WilhenAlbertoHM?tab=repositories" 
-        //                                       style={{color: "var(--orange)", fontWeight: "bold", textUnderlineOffset: "5px"}}>here
-        //                                    </a>
-        //     </p>
-        // </div>
-        <ImageList variant="masonry" cols={3} gap={8}>
-            {projects.map((item) => (
-                <ImageListItem key={item.img}>
-                <img
-                    srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                    src={`${item.img}?w=248&fit=crop&auto=format`}
-                    alt={item.title}
-                    loading="lazy"
-                />
-                </ImageListItem>
-            ))}
-        </ImageList>
+        <div className="projectList">
+            <h1 className="projectListTitle">
+                Projects <img className="projectListTitleIcon" src="https://www.svgrepo.com/show/262132/light-bulb.svg" />
+            </h1>
+            <div className="projectListContainer">
+                { projects.map((project) => (
+                    <Project key={project.id} {...project} />
+                ))}
+            </div>
+            <p className="moreProjects">
+                More projects can be found <a href="https://github.com/WilhenAlbertoHM?tab=repositories" 
+                                              style={{color: "var(--orange)", fontWeight: "bold", textUnderlineOffset: "5px"}}>here
+                                           </a>
+            </p>
+        </div>
     );
 };
 
