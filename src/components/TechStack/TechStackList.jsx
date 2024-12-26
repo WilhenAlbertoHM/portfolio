@@ -20,12 +20,12 @@ const techStacks = [
     {
         title: "Frontend",
         items: [
-            { name: "React", icon: "TechStack/Frontend/react.svg" },
+            { name: "JavaScript", icon: "TechStack/Frontend/javascript.svg" },
             { name: "HTML", icon: "TechStack/Frontend/html.svg" },
             { name: "CSS", icon: "TechStack/Frontend/css.svg" },
-            { name: "JavaScript", icon: "TechStack/Frontend/javascript.svg" },
+            { name: "React", icon: "TechStack/Frontend/react.svg" },
             { name: "Canva", icon: "TechStack/Frontend/canva.svg" },
-            { name: "Streamlit", icon: "https://streamlit.io/images/brand/streamlit-mark-color.png" },
+            { name: "Streamlit", icon: "https://streamlit.io/images/brand/streamlit-mark-color.png" }
 
         ]
     },
@@ -37,7 +37,7 @@ const techStacks = [
             { name: "Pinecone", icon: "TechStack/DatabasesNCloud/pinecone.svg" },
             { name: "AWS EC2", icon: "TechStack/DatabasesNCloud/ec2.svg" },
             { name: "AWS Bedrock", icon: "TechStack/DatabasesNCloud/bedrock.svg" },
-            { name: "AWS S3", icon: "TechStack/DatabasesNCloud/s3.svg" },
+            { name: "AWS S3", icon: "TechStack/DatabasesNCloud/s3.svg" }
         ]
     },
     {
@@ -48,7 +48,7 @@ const techStacks = [
             { name: "VS Code", icon: "TechStack/Tools/vscode.svg" },
             { name: "Docker", icon: "TechStack/Tools/docker.svg" },
             { name: "Jupyter", icon: "TechStack/Tools/jupyter.svg" },
-            { name: "Ubuntu", icon: "TechStack/Tools/ubuntu.svg" },
+            { name: "Ubuntu", icon: "TechStack/Tools/ubuntu.svg" }
         ]
     }
 ];
