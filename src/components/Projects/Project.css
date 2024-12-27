@@ -11,7 +11,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1rem;
-    padding: 2rem;
+    padding: 3rem;
     position: relative;
 }
 
@@ -40,7 +40,7 @@
     box-sizing: border-box;
     position: relative;
     width: 25rem;
-    height: 40rem;
+    height: 32rem;
     border-radius: 1rem;
     overflow: hidden;
 }
@@ -133,6 +133,6 @@
     font-size: 1.8rem;
     font-style: italic;
     color: var(--white);
-    margin: 1rem 3rem;
+    margin: 0.5rem 3rem;
     text-align: end;
 }
