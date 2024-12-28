@@ -4,7 +4,7 @@ import Intro from "./components/Intro/Intro.jsx";
 import About from "./components/About/About.jsx";
 import ExperienceList from "./components/Experience/ExperienceList.jsx";
 import ProjectList from "./components/Projects/ProjectList.jsx";
-import PictureList from "./components/Gallery/PictureList.jsx";
+import Gallery from "./components/Gallery/Gallery.jsx";
 import TechStackList from "./components/TechStack/TechStackList.jsx";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -21,7 +21,7 @@ const App = () => {
                 duration: 0.5,
                 scrollTrigger: {
                     trigger: section,
-                    start: "top 80%",
+                    start: "top 60%",
                     end: "bottom 20%",
                     toggleActions: "play none none reverse",
                     markers: false
@@ -38,7 +38,7 @@ const App = () => {
             <ExperienceList />  
             <ProjectList />
             <TechStackList />
-            <PictureList />
+            <Gallery />
         </div>
     );
 }

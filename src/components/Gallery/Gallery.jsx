@@ -1,9 +1,7 @@
 import React from "react";
-import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import "./Picture.css";
-import Picture from "./Picture.jsx";
+import "./Gallery.css";
 
 
 const pictures = [
@@ -18,11 +16,11 @@ const pictures = [
     {id: 9, image: "Gallery/nightumb.jpg"},
 ]
 
-const PictureList = () => {
+const Gallery = () => {
     return (
         <div className="gallery">
-            <h1 className="pictureListTitle">
-                Gallery <img className="pictureListTitleIcon" src="https://www.svgrepo.com/show/503863/camera.svg" />
+            <h1 className="galleryTitle">
+                Gallery <img className="galleryTitleIcon" src="https://www.svgrepo.com/show/503863/camera.svg" />
             </h1>
             <ImageList variant="masonry" cols={3} gap={8}>
             {pictures.map((item) => (
@@ -39,4 +37,4 @@ const PictureList = () => {
     );
 };
 
-export default PictureList;
+export default Gallery;
