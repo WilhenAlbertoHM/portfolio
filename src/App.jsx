@@ -12,23 +12,23 @@ import "./App.css";
 
 
 const App = () => {
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        gsap.utils.toArray(".about, .experienceList, .projectList, .techStackList, .gallery").forEach((section) => {
-            gsap.from(section, {
-                opacity: 0,
-                y: 50,
-                duration: 0.5,
-                scrollTrigger: {
-                    trigger: section,
-                    start: "top 60%",
-                    end: "bottom 20%",
-                    toggleActions: "play none none reverse",
-                    markers: false
-                }
-            })
-        });
-    }, []);
+    // useEffect(() => {
+    //     gsap.registerPlugin(ScrollTrigger);
+    //     gsap.utils.toArray(".about, .experienceList, .projectList, .techStackList, .gallery").forEach((section) => {
+    //         gsap.from(section, {
+    //             opacity: 0,
+    //             y: 50,
+    //             duration: 0.5,
+    //             scrollTrigger: {
+    //                 trigger: section,
+    //                 start: "top 60%",
+    //                 end: "bottom 20%",
+    //                 toggleActions: "play none none reverse",
+    //                 markers: false
+    //             }
+    //         })
+    //     });
+    // }, []);
 
     return (
         <div>

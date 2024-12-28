@@ -76,8 +76,9 @@
 .experienceContent {
     background: var(--blacktotransparent);
     padding: 3rem;
+    max-width: 80rem;
     text-wrap: balance;
-    border-radius: 2em;
+    border-radius: 2rem;
 }
 
 .experienceCompany {
