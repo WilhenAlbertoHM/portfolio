@@ -14,7 +14,7 @@ import "./App.css";
 const App = () => {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-        gsap.utils.toArray(".about, .experienceList, .projectList, .techStackList, .pictureList").forEach((section) => {
+        gsap.utils.toArray(".about, .experienceList, .projectList, .techStackList, .gallery").forEach((section) => {
             gsap.from(section, {
                 opacity: 0,
                 y: 50,
