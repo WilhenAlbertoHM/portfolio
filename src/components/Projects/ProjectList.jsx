@@ -49,14 +49,13 @@ const projects = [
     },
     {
         id: 5,
-        image: "Projects/graphbox.png",
-        title: "GraphBox",
-        description: "A Roblox game that consists of 2 custom games: GObby! and BoxDash. \
-        Beware of where you jump in GObby!, or else you will fall and plummet to your demise. \
-        Beware of where you land in BoxDash, the lava will set you on fire and meet your demise.",
-        keywords: ["Roblox", "game", "GObby!", "BoxDash."],
-        techStack: ["Roblox Studio", "Lua", "Blender"],
-        github: "https://github.com/CS460GraphBox/GraphBox"
+        image: "Projects/labormigration.png",
+        title: "Latino Labor Migration",
+        description: "A data visualization of the Latino labor migration in Massachusetts from 1990 to 2022, \
+        with the purpose of learning more about the role Latinos have played in shaping the state's diverse identity.",
+        keywords: ["data", "visualization", "Latino", "labor", "migration", "Massachusetts", "1990", "2022"],
+        techStack: ["JavaScript", "Vega-Lite", "GSAP", "Plotly"],
+        github: "https://github.com/WilhenAlbertoHM/Labor-Migration-Vis/"
     },
     {
         id: 6,
@@ -67,8 +66,8 @@ const projects = [
         and many more.",
         keywords: ["collection", "graphics", "projects", "CS460", "3D", "scenes", "cubes", "torus", "knots,", "3D-printed", "models", "WebGL,"],
         techStack: ["JavaScript", "WebGL", "D3.js", "Three.js", "XTK.js", "Blender"],
-        github: "https://github.com/WilhenAlbertoHM/cs460student/tree/main"
-    },  
+        github: "https://github.com/WilhenAlbertoHM/cs460student/"
+    }
 ]
 
 const ProjectList = () => {
