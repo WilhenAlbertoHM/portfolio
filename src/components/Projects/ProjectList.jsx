@@ -53,7 +53,7 @@ const projects = [
         title: "Latino Labor Migration",
         description: "A data visualization of the Latino labor migration in Massachusetts from 1990 to 2022, \
         with the purpose of learning more about the role Latinos have played in shaping the state's diverse identity.",
-        keywords: ["data", "visualization", "Latino", "labor", "migration", "Massachusetts", "1990", "2022"],
+        keywords: ["data", "visualization", "Latino", "labor", "migration", "Massachusetts", "1990", "2022,"],
         techStack: ["JavaScript", "Vega-Lite", "GSAP", "Plotly"],
         github: "https://github.com/WilhenAlbertoHM/Labor-Migration-Vis/"
     },
