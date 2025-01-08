@@ -29,7 +29,7 @@ const projects = [
         title: "Sentiment Analysis With Gaze",
         description: "RNN and CNN models using a large dataset of 6,000 videos to predict personality traits, \
         from facial expressions based on the OCEAN personality test.",
-        keywords: ["RNN", "CNN", "6,000", "videos", "predict", "personality", "traits", "facial", "expressions", "OCEAN", "personality", "test."],
+        keywords: ["RNN", "CNN", "6,000", "videos", "predict", "personality", "traits,", "facial", "expressions", "OCEAN", "personality", "test."],
         techStack: ["Python", "TensorFlow", "Keras", "scikit-learn"],
         github: "https://github.com/WilhenAlbertoHM/Sentiment-Analysis-With-Gaze/"
     },
