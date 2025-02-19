@@ -1,46 +1,82 @@
-import React, { useEffect } from "react";
-import NavBar from "./components/NavBar/NavBar.jsx";
-import Intro from "./components/Intro/Intro.jsx";
-import About from "./components/About/About.jsx";
-import ExperienceList from "./components/Experience/ExperienceList.jsx";
-import ProjectList from "./components/Projects/ProjectList.jsx";
-import Gallery from "./components/Gallery/Gallery.jsx";
-import TechStackList from "./components/TechStack/TechStackList.jsx";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "./App.css";
+import { Navbar } from "./components/Navbar.jsx";
+import { Intro } from "./components/Intro.jsx";
+import { About } from "./components/About.jsx";
+import { Experience } from "./components/Experience.jsx";
+import { Project } from "./components/Project.jsx";
+import { TechStack } from "./components/TechStack.jsx";
+import { Gallery } from "./components/Gallery.jsx";
+import { motion } from "motion/react";
 
+function App() {
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 250 },
+    visible: { opacity: 1, y: 0 }
+  };
 
-const App = () => {
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        gsap.utils.toArray(".about, .experienceList, .projectList, .techStackList, .gallery").forEach((section) => {
-            gsap.from(section, {
-                opacity: 0,
-                y: 50,
-                duration: 0.5,
-                scrollTrigger: {
-                    trigger: section,
-                    start: "top 60%",
-                    end: "bottom 20%",
-                    toggleActions: "play none none reverse",
-                    markers: false
-                }
-            })
-        });
-    }, []);
+  return (
+    <div className="space-y-40">
+      <Navbar />
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        variants={ fadeInUp }
+      >
+        <Intro />
+      </motion.div>
 
-    return (
-        <div>
-            <NavBar />
-            <Intro />
-            <About />
-            <ExperienceList />  
-            <ProjectList />
-            <TechStackList />
-            <Gallery />
-        </div>
-    );
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        variants={fadeInUp}
+      >
+        <About />
+      </motion.div>
+
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        variants={fadeInUp}
+      >
+        <Experience />
+      </motion.div>
+
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        variants={fadeInUp}
+      >
+        <Project />
+      </motion.div>
+
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        variants={fadeInUp}
+      >
+        <TechStack />
+      </motion.div>
+
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        variants={fadeInUp}
+      >
+        <Gallery />
+      </motion.div>
+    </div>
+  );
 }
 
 export default App
