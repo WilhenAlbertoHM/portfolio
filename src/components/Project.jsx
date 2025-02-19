@@ -35,7 +35,7 @@ const projects = [
         a classification model predicting heart failure patient survival based on medical records, \
         a regression model predicting life expectancy by country based on various socio-economic factors, and many more",
         techStack: ["Python", "TensorFlow", "Keras", "scikit-learn"],
-        github: "https://github.com/CS460GraphBox/GraphBox"
+        github: "https://github.com/WilhenAlbertoHM/Deep-Learning-Projects/"
     },
     {
         id: 5,
