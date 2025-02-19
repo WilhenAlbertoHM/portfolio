@@ -1,8 +1,7 @@
-# React + Vite
+# My Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My portfolio website, where I show my projects, resume, and much more!
 
-Currently, two official plugins are available:
+The website was built using Bun, Vite, and React.js, with some components imported from Material UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/user-attachments/assets/52c45d9d-c8de-4535-a7de-6b485cd4f58c)
