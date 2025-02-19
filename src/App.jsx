@@ -16,15 +16,7 @@ function App() {
   return (
     <div className="space-y-40">
       <Navbar />
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        variants={ fadeInUp }
-      >
-        <Intro />
-      </motion.div>
+      <Intro />
 
       <motion.div
         initial="hidden"
