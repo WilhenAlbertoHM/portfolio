@@ -17,7 +17,7 @@ export const Navbar = () => {
             <ul className={
                     `${isOpen ? "flex items-center" : "hidden"} 
                     md:flex flex-col md:flex-row absolute md:relative top-full md:top-0 left-0 right-0 md:space-x-12
-                    text-2xl text-[var(--lightgray)] p-4 md:p-0`
+                    text-2xl text-[var(--lightgray)] p-4 md:p-0 bg-[var(--black)]`
                 }
             >
                 <li className="py-2 md:py-0">

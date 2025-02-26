@@ -4,6 +4,7 @@ export const TechStack = () => {
             title: "Backend",
             items: [
                 { name: "Python", icon: "TechStack/Backend/python.svg" },
+                { name: "scikit-learn", icon: "TechStack/Backend/scikitlearn.svg" },
                 { name: "TensorFlow", icon: "TechStack/Backend/tensorflow.svg" },
                 { name: "Keras", icon: "TechStack/Backend/keras.svg" },
                 { name: "PyTorch", icon: "TechStack/Backend/pytorch.svg" },
