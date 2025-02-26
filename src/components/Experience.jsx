@@ -58,7 +58,7 @@ export const Experience = () => {
                             <div>
                                 <h2 className="text-xl md:text-2xl lg:text-4xl font-semibold text-[var(--lightgray)]">{ title }</h2>
                                 <h3 className="text-base md:text-lg lg:text-xl text-[var(--orange)] italic mt-2">{ company }</h3>
-                                <h3 className="text-xs md:text-sm lg:text-md text-[var(--lightgray)] italic">{ duration }</h3>
+                                <h3 className="text-xs md:text-sm lg:text-md text-gray-400 italic">{ duration }</h3>
                             </div>
                         </header>
 
