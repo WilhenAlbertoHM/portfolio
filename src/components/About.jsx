@@ -11,7 +11,7 @@ export const About = () => {
                         <img className="h-16 w-auto ml-2" src="About/waving-hand.svg" alt="Waving Hand"/>
                     </h2>
                     <p className="text-lg mb-4 leading-relaxed text-wrap text-left">
-                        Hola! I’m Wilhen Alberto Hui Mei, and I have 1 year of experience in building software and AI/ML applications. 
+                        Hola! I’m Wilhen Alberto Hui Mei, and I have over a year of experience in building software and AI/ML applications. 
                         I use spoken and programming languages to create a positive impact around us.
                     </p>
                 </div>
