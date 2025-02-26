@@ -2,23 +2,23 @@ export const Experience = () => {
     const experiences = [
         {
             id: 1,
+            logo: "Experience/moma.png",
+            title: "ML/Software Engineer Intern",
+            company: "MOMA Therapeutics",
+            duration: "June 2024 - August 2024",
+            description: "Built a classification system to compare LLMs vs. neural networks for predicting half-life and IC50 from SMILES strings. \
+            Achieved 70% accuracy in predicting cysteine ligandability, advancing covalent drug discovery. \
+            Enabled scientists to refine chatbot prompts through a Retool-based UI, improving research workflows."
+        },
+        {
+            id: 2,
             logo: "Experience/ids.jpg",
             title: "Research ML Fellow",
             company: "IDS Fellowship @ UMB",
             duration: "June 2023 - May 2024",
             description: "Reduced mean-squared error by 30% in predicting personality traits from facial expressions using RNN and CNN models on 6,000 videos, enhancing VR character realism. \
             Presented findings to 500+ attendees at MassURC and CSM’s Annual Showcase, earning Best Poster Design. Co-authored a paper submitted to ACM SIGGRAPH MIG 2024."
-        },
-        {
-            id: 2,
-            logo: "Experience/moma.png",
-            title: "ML/Software Engineer Intern",
-            company: "MOMA Therapeutics",
-            duration: "June 2024 - August 2024",
-            description: "Built an LLM vs. neural network classifier for predicting half-life and IC50 from SMILES strings. \
-            Achieved 70% accuracy in predicting cysteine ligandability, advancing covalent drug discovery. \
-            Enabled scientists to refine chatbot prompts through a Retool-based UI, improving research workflows."
-        },
+        }
     ];
 
     return (
