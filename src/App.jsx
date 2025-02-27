@@ -5,6 +5,7 @@ import { Experience } from "./components/Experience.jsx";
 import { Project } from "./components/Project.jsx";
 import { TechStack } from "./components/TechStack.jsx";
 import { Gallery } from "./components/Gallery.jsx";
+import { Footer } from "./components/Footer.jsx";
 import { motion } from "motion/react";
 
 function App() {
@@ -67,6 +68,7 @@ function App() {
       >
         <Gallery />
       </motion.div>
+      <Footer />
     </div>
   );
 }
