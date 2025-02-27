@@ -51,12 +51,12 @@ export const TechStack = () => {
     ];
 
     return (
-        <div className="mx-auto max-w-7xl">
+        <section className="mx-auto max-w-7xl">
             <h1 className="flex items-center justify-center gap-2 text-4xl font-bold text-center text-[var(--orange)] mb-12">
                 Technologies <img className="w-12 h-12 ml-2 animate-pulse" src="https://www.svgrepo.com/show/336126/terminal.svg" alt="terminal icon" />
             </h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <article className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 { techStacks.map((stack, index) => (
                     <div key={index} className="text-white p-8 rounded-xl shadow-xl border-1 border-[var(--orange)] [background:var(--blacktotransparent)]">
                         <h2 className="text-3xl font-semibold mb-8 text-center text-[var(--orange)]">{ stack.title }</h2>
@@ -70,7 +70,7 @@ export const TechStack = () => {
                         </div>
                     </div>
                 ))}
-            </div>
-        </div>
+            </article>
+        </section>
     );
 };

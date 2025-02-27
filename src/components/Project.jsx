@@ -79,13 +79,13 @@ const techIcons = {
 
 export const Project = () => {
     return (
-        <div id="project" className="max-w-[90rem] mx-auto">
+        <section id="project" className="max-w-[90rem] mx-auto">
             <h1 className="flex items-center justify-center text-4xl font-bold text-center text-[var(--orange)] mb-12">
                 Projects
                 <img src="https://www.svgrepo.com/show/262132/light-bulb.svg" alt="Light Bulb" className="h-12 w-auto ml-3" />
             </h1>
             
-            <div className="mx-2 grid gap-y-12 gap-x-24 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 place-items-center">
+            <article className="mx-2 grid gap-y-12 gap-x-24 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 place-items-center">
                 { projects.map(({ id, image, title, description, techStack, github }) => (
                     <div key={ id } 
                          className="flex flex-col text-[var(--lightgray)] p-11 rounded-3xl shadow-xl w-[30rem] h-[53rem] hover:scale-102 transition-transform duration-300 cursor-pointer border-1 border-[var(--orange)]"
@@ -122,11 +122,11 @@ export const Project = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </article>
             
-            <p className="text-right text-lg text-[var(--lightgray)] mt-8">
+            <footer className="text-right text-lg text-[var(--lightgray)] mt-8">
                 More projects can be found <a href="https://github.com/WilhenAlbertoHM?tab=repositories" className="text-[var(--orange)] font-bold underline underline-offset-4">here</a>
-            </p>
-        </div>
+            </footer>
+        </section>
     );
 };

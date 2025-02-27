@@ -16,7 +16,7 @@ const pictures = [
 
 export const Gallery = () => {
     return (
-        <div id="gallery">
+        <section id="gallery">
             <h1 className="flex items-center justify-center text-3xl font-bold text-[var(--orange)] mb-6">
                 Gallery <img className="ml-2 w-12 h-12" src="https://www.svgrepo.com/show/503863/camera.svg" />
             </h1>
@@ -32,6 +32,6 @@ export const Gallery = () => {
                 </ImageListItem>
             ))}
             </ImageList>
-        </div>
+        </section>
     );
 };
