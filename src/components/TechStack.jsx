@@ -64,7 +64,7 @@ export const TechStack = () => {
                             { stack.items.map((item, idx) => (
                                 <div key={ idx } className="flex flex-col items-center">
                                     <img src={ item.icon } alt={ item.name } className="w-12 h-12 mb-2" />
-                                    <span className="text-md text-center">{ item.name }</span>
+                                    <span className="text-md text-center text-[var(--lightgray)]">{ item.name }</span>
                                 </div>
                             ))}
                         </div>
