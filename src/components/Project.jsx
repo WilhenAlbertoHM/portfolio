@@ -113,7 +113,7 @@ export const Project = () => {
                                     ))}
                                 </div>
                                 <a href={ github } 
-                                   target="_blank"  
+                                   target="_blank"
                                    className="text-[var(--orange)] text-xl flex items-center justify-center mt-12"
                                 >
                                     <img src="Social/github.svg" alt="GitHub Icon" className="w-10"/>
