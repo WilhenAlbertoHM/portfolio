@@ -58,8 +58,8 @@ export const TechStack = () => {
 
             <article className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 { techStacks.map((stack, index) => (
-                    <div key={index} className="text-white p-8 rounded-xl shadow-xl border-1 border-[var(--orange)] [background:var(--blacktotransparent)]">
-                        <h2 className="text-3xl font-semibold mb-8 text-center text-[var(--orange)]">{ stack.title }</h2>
+                    <div key={ index } className="text-white p-8 rounded-xl shadow-xl border-1 border-[var(--orange)] [background:var(--blacktotransparent)]">
+                        <h2 className="text-3xl font-semibold mb-8 text-center text-[var(--white)]">{ stack.title }</h2>
                         <div className="grid grid-cols-3 gap-6">
                             { stack.items.map((item, idx) => (
                                 <div key={ idx } className="flex flex-col items-center">
