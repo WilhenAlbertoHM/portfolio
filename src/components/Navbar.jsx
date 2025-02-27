@@ -9,7 +9,7 @@ export const Navbar = () => {
     };
 
     return (
-        <nav id="navbar" className="fixed top-0 w-full flex justify-evenly align-center bg-[var(--black)] text-[var(--white)] p-2 z-40">
+        <nav id="navbar" className="fixed top-0 w-full flex justify-evenly align-center bg-[var(--black)] text-[var(--white)] p-2 z-40 select-none">
             <a href="/" className="text-4xl md:text-3xl font-bold text-[var(--orange)]">
                 W A H M
             </a>

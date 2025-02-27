@@ -22,7 +22,6 @@ function App() {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
         transition={{ duration: 0.5 }}
         variants={fadeInUp}
       >
@@ -32,7 +31,6 @@ function App() {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
         transition={{ duration: 0.5 }}
         variants={fadeInUp}
       >
@@ -42,7 +40,6 @@ function App() {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
         transition={{ duration: 0.5 }}
         variants={fadeInUp}
       >
@@ -52,7 +49,6 @@ function App() {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
         transition={{ duration: 0.5 }}
         variants={fadeInUp}
       >
@@ -62,7 +58,6 @@ function App() {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
         transition={{ duration: 0.5 }}
         variants={fadeInUp}
       >

@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export const Experience = () => {
     const experiences = [
         {
@@ -48,8 +50,11 @@ export const Experience = () => {
                 <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-gray-400 rounded-full"></div>
                 
                 { experiences.map(({ id, title, company, duration, description, techStack }) => (
-                    <article 
-                        key={ id } 
+                    <motion.div
+                        key={ id }
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: id * 0.1 }}
                         className="p-12 rounded-3xl shadow-2xl bg-[var(--black)] relative ml-8 border-1 border-[var(--orange)] [background:var(--blacktotransparent)]"
                     >
                         <div className="absolute left-[-2.95rem] top-1/6 w-4 h-4 bg-[var(--orange)] rounded-full -ml-10"></div>
@@ -80,7 +85,7 @@ export const Experience = () => {
                                 ))}
                             </div>
                         </div>
-                    </article>
+                    </motion.div>
                 ))}
             </div>
         </section>

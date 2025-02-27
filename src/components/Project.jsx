@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const projects = [
     {
         id: 1,
@@ -87,40 +89,48 @@ export const Project = () => {
             
             <article className="mx-2 grid gap-y-12 gap-x-24 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 place-items-center">
                 { projects.map(({ id, image, title, description, techStack, github }) => (
-                    <div key={ id } 
-                         className="flex flex-col text-[var(--lightgray)] p-11 rounded-3xl shadow-xl w-[30rem] h-[53rem] hover:scale-102 transition-transform duration-300 cursor-pointer border-1 border-[var(--orange)]"
-                         style={{ background: "var(--blacktotransparent)" }}
-                         onClick={ () => window.open(github, "_blank") }
-                    >    
-                        <div className="w-full h-[18rem] bg-contain bg-no-repeat bg-center" 
-                             style={{ backgroundImage: `url(${image})` }}>
-                        </div>
+                    <motion.div
+                        key={ id }
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.5, delay: id * 0.05 }}
+                        className="flex flex-col items-center"
+                    >
+                        <div key={ id } 
+                            className="flex flex-col text-[var(--lightgray)] p-11 rounded-3xl shadow-xl w-[30rem] h-[53rem] hover:scale-102 transition-transform duration-300 cursor-pointer border-1 border-[var(--orange)]"
+                            style={{ background: "var(--blacktotransparent)" }}
+                            onClick={ () => window.open(github, "_blank") }
+                        >    
+                            <div className="w-full h-[18rem] bg-contain bg-no-repeat bg-center" 
+                                style={{ backgroundImage: `url(${image})` }}>
+                            </div>
 
-                        <div className="flex flex-1 flex-col justify-between mt-10"> 
-                            <div>
-                                <h2 className="text-3xl font-semibold text-[var(--orange)] mb-6 text-balance">{ title }</h2>
-                                <p className="text-base text-[var(--lightgray)] mb-4 text-balance">{ description }</p>
-                            </div>
-                            <div>
-                                <div className="grid grid-cols-2 gap-2">
-                                    { techStack.map((tech, index) => (
-                                        <span key={ index } className="flex items-center justify-center bg-gray-900 text-orange-400 p-2 w-full rounded-lg text-sm text-center gap-2">
-                                            { techIcons[tech] && (
-                                                <img src={ techIcons[tech] } alt={ tech } className="w-6 h-auto" />
-                                            )}
-                                            { tech }
-                                        </span>
-                                    ))}
+                            <div className="flex flex-1 flex-col justify-between mt-10"> 
+                                <div>
+                                    <h2 className="text-3xl font-semibold text-[var(--orange)] mb-6 text-balance">{ title }</h2>
+                                    <p className="text-base text-[var(--lightgray)] mb-4 text-balance">{ description }</p>
                                 </div>
-                                <a href={ github } 
-                                   target="_blank"
-                                   className="text-[var(--orange)] text-xl flex items-center justify-center mt-12"
-                                >
-                                    <img src="Social/github.svg" alt="GitHub Icon" className="w-10"/>
-                                </a>
+                                <div>
+                                    <div className="grid grid-cols-2 gap-2">
+                                        { techStack.map((tech, index) => (
+                                            <span key={ index } className="flex items-center justify-center bg-gray-900 text-orange-400 p-2 w-full rounded-lg text-sm text-center gap-2">
+                                                { techIcons[tech] && (
+                                                    <img src={ techIcons[tech] } alt={ tech } className="w-6 h-auto" />
+                                                )}
+                                                { tech }
+                                            </span>
+                                        ))}
+                                    </div>
+                                    <a href={ github } 
+                                        target="_blank"
+                                        className="text-[var(--orange)] text-xl flex items-center justify-center mt-12"
+                                    >
+                                        <img src="Social/github.svg" alt="GitHub Icon" className="w-10"/>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </article>
             

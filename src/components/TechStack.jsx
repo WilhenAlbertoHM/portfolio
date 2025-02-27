@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export const TechStack = () => {
     const techStacks = [
         {
@@ -58,17 +60,30 @@ export const TechStack = () => {
 
             <article className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 { techStacks.map((stack, index) => (
-                    <div key={ index } className="text-white p-8 rounded-xl shadow-xl border-1 border-[var(--orange)] [background:var(--blacktotransparent)]">
+                    <motion.div
+                        key={ index }
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                        className="text-white p-8 rounded-xl shadow-xl border-1 border-[var(--orange)] [background:var(--blacktotransparent)]"
+                    >
                         <h2 className="text-3xl font-semibold mb-8 text-center text-[var(--white)]">{ stack.title }</h2>
-                        <div className="grid grid-cols-3 gap-6">
+                        <div className="grid grid-cols-3 gap-4">
                             { stack.items.map((item, idx) => (
-                                <div key={ idx } className="flex flex-col items-center">
+                                <motion.div
+                                    key={idx}
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1 }}
+                                    transition={{ duration: 0.3, delay: idx * 0.05 }}
+                                    whileHover={{ scale: 1.1 }}
+                                    className="flex flex-col items-center"
+                                >
                                     <img src={ item.icon } alt={ item.name } className="w-12 h-12 mb-2" />
                                     <span className="text-md text-center text-[var(--lightgray)]">{ item.name }</span>
-                                </div>
+                                </motion.div>
                             ))}
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </article>
         </section>
