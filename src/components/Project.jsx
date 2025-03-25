@@ -129,7 +129,7 @@ export const Project = () => {
             >
               <div
                 key={id}
-                className="flex flex-col text-[var(--lightgray)] p-11 rounded-3xl shadow-xl w-[30rem] h-[53rem] hover:scale-102 transition-transform duration-300 cursor-pointer border-1 border-[var(--orange)]"
+                className="flex flex-col text-[var(--lightgray)] p-12 rounded-3xl shadow-xl w-[25rem] md:w-[30rem] h-[50rem] md:h-[53rem] hover:scale-102 transition-transform duration-300 cursor-pointer border-1 border-[var(--orange)]"
                 style={{ background: "var(--blacktotransparent)" }}
                 onClick={() => window.open(github, "_blank")}
               >
@@ -143,7 +143,7 @@ export const Project = () => {
                     <h2 className="text-3xl font-semibold text-[var(--orange)] mb-6 text-balance">
                       {title}
                     </h2>
-                    <p className="text-base text-[var(--lightgray)] mb-4 text-balance">
+                    <p className="text-sm md:text-base text-[var(--lightgray)] mb-4 text-balance">
                       {description}
                     </p>
                   </div>
@@ -184,7 +184,7 @@ export const Project = () => {
         )}
       </article>
 
-      <footer className="text-right text-lg text-[var(--lightgray)] mt-8">
+      <footer className="text-right text-lg text-[var(--lightgray)] mt-8 mx-4">
         More projects can be found{" "}
         <a
           href="https://github.com/WilhenAlbertoHM?tab=repositories"
