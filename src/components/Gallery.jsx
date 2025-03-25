@@ -15,15 +15,15 @@ const pictures = [
 
 export const Gallery = () => {
   return (
-    <section id="gallery">
+    <section id="gallery" className="mb-8">
       <h1 className="flex items-center justify-center text-3xl font-bold text-[var(--orange)] mb-6">
-        Some Pics{" "}
+        Some Pics
         <img
           className="ml-2 w-12 h-12"
           src="https://www.svgrepo.com/show/503863/camera.svg"
         />
       </h1>
-      <ImageList variant="masonry" cols={3} gap={8}>
+      <ImageList variant="masonry" className="mx-4" cols={3} gap={8}>
         {pictures.map((item) => (
           <ImageListItem key={item.image}>
             <img

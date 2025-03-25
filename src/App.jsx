@@ -11,61 +11,63 @@ import { motion } from "motion/react";
 function App() {
   const fadeInUp = {
     hidden: { opacity: 0, y: 250 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
-    <div className="space-y-40">
-      <Navbar />
-      <Intro />
+    <main>
+      <div className="space-y-40">
+        <Navbar />
+        <Intro />
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 0.5 }}
-        variants={fadeInUp}
-      >
-        <About />
-      </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+          variants={fadeInUp}
+        >
+          <About />
+        </motion.div>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 0.5 }}
-        variants={fadeInUp}
-      >
-        <Experience />
-      </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+          variants={fadeInUp}
+        >
+          <Experience />
+        </motion.div>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 0.5 }}
-        variants={fadeInUp}
-      >
-        <Project />
-      </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+          variants={fadeInUp}
+        >
+          <Project />
+        </motion.div>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 0.5 }}
-        variants={fadeInUp}
-      >
-        <TechStack />
-      </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+          variants={fadeInUp}
+        >
+          <TechStack />
+        </motion.div>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 0.5 }}
-        variants={fadeInUp}
-      >
-        <Gallery />
-      </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+          variants={fadeInUp}
+        >
+          <Gallery />
+        </motion.div>
+      </div>
       <Footer />
-    </div>
+    </main>
   );
 }
 
-export default App
+export default App;
