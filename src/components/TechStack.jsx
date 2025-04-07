@@ -36,11 +36,6 @@ export const TechStack = () => {
           name: "PostgreSQL",
           icon: "TechStack/DatabasesNCloud/postgresql.svg",
         },
-        {
-          name: "SQLite",
-          icon: "https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg",
-        },
-        { name: "MongoDB", icon: "TechStack/DatabasesNCloud/mongodb.svg" },
         { name: "Pinecone", icon: "TechStack/DatabasesNCloud/pinecone.svg" },
         { name: "AWS EC2", icon: "TechStack/DatabasesNCloud/ec2.svg" },
         { name: "AWS Bedrock", icon: "TechStack/DatabasesNCloud/bedrock.svg" },
