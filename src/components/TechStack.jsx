@@ -19,10 +19,13 @@ export const TechStack = () => {
     {
       title: "Frontend",
       items: [
+        { name: "Next.js", icon: "TechStack/Frontend/nextjs.svg" },
+        { name: "React", icon: "TechStack/Frontend/react.svg" },
         { name: "JavaScript", icon: "TechStack/Frontend/javascript.svg" },
+        { name: "TypeScript", icon: "TechStack/Frontend/typescript.svg" },
         { name: "HTML", icon: "TechStack/Frontend/html.svg" },
         { name: "CSS", icon: "TechStack/Frontend/css.svg" },
-        { name: "React", icon: "TechStack/Frontend/react.svg" },
+        { name: "Tailwind CSS", icon: "TechStack/Frontend/tailwindcss.svg" },
         {
           name: "Streamlit",
           icon: "https://streamlit.io/images/brand/streamlit-mark-color.png",
