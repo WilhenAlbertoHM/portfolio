@@ -3,64 +3,64 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
+    image: "Projects/biblebytes.jpg",
+    title: "BibleBytes",
+    description:
+      "An interactive app that give users the ability to grow in their faith through daily Bible reading, interactive quizzes, and meaningful prayer reflections. ",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+    github: "https://biblebytes.vercel.app",
+  },
+  {
+    id: 2,
     image: "Projects/faithful.jpg",
     title: "Faithful AI",
     description:
       "A Christian chatbot powered by Llama 3.1 designed to help users learn more about the Bible and grow in their faith. \
-        It responds in English, Spanish, French, and German in a passionate and energetic tone.",
+      It responds in English, Spanish, French, and German in a passionate and energetic tone.",
     techStack: ["Python", "LangChain", "Streamlit"],
     github: "https://github.com/WilhenAlbertoHM/FaithfulAI",
   },
   {
-    id: 2,
+    id: 3,
     image:
       "https://github.com/user-attachments/assets/f589397a-1c46-415a-bc17-459e111623a0",
     title: "VideoAskRAG",
     description:
       "A RAG application powered by Llama 3.2 that can answer questions about a YouTube video. \
-        The system receives a link, creates a transcription, and uses it as context before answering the user.",
+      The system receives a link, creates a transcription, and uses it as context before answering the user.",
     techStack: ["Python", "LangChain", "Streamlit", "Pinecone"],
     github: "https://github.com/WilhenAlbertoHM/VideoAskRAG",
   },
   {
-    id: 3,
+    id: 4,
     image: "Projects/sloanresearch.jpg",
     title: "Sentiment Analysis w/ Gaze",
     description:
       "RNN and CNN models using a large dataset of 6,000 videos to predict personality traits, \
-        from facial expressions based on the OCEAN personality test.",
+      from facial expressions based on the OCEAN personality test.",
     techStack: ["Python", "TensorFlow", "Keras", "scikit-learn"],
     github: "https://github.com/WilhenAlbertoHM/Sentiment-Analysis-With-Gaze/",
   },
   {
-    id: 4,
+    id: 5,
     image: "Projects/deep-learning-projects.jpg",
     title: "Deep Learning Projects",
     description:
       "A collection of deep learning projects made with TensorFlow. \
-        Projects include a CNN model predicting pneumonia, COVID-19, or no illness from X-ray images, \
-        a classification model predicting heart failure patient survival based on medical records, \
-        a regression model predicting life expectancy by country based on various socio-economic factors, and many more.",
+      Projects include a CNN model predicting pneumonia, COVID-19, or no illness from X-ray images, \
+      a classification model predicting heart failure patient survival based on medical records, \
+      a regression model predicting life expectancy by country based on various socio-economic factors, and many more.",
     techStack: ["Python", "TensorFlow", "Keras", "scikit-learn"],
     github: "https://github.com/WilhenAlbertoHM/Deep-Learning-Projects/",
   },
-  {
-    id: 5,
-    image: "Projects/labormigration.jpg",
-    title: "Latino Labor Migration",
-    description:
-      "A data visualization of the Latino labor migration in Massachusetts from 1990 to 2022, \
-        with the purpose of learning more about the role Latinos have played in shaping the state's diverse identity.",
-    techStack: ["JavaScript", "Vega-Lite", "GSAP", "Plotly"],
-    github: "https://github.com/WilhenAlbertoHM/Labor-Migration-Vis/",
-  },
+
   {
     id: 6,
     image: "Projects/cs460.jpg",
     title: "Graphics Projects",
     description:
       "A collection of graphics projects made in CS460. \
-        Projects include creating 3D scenes using cubes and torus knots, loading 3D-printed models to render in WebGL, and many more.",
+      Projects include creating 3D scenes using cubes and torus knots, loading 3D-printed models to render in WebGL, and many more.",
     techStack: [
       "JavaScript",
       "WebGL",
@@ -103,6 +103,10 @@ const techIcons = {
   LangChain: "TechStack/Backend/langchain.svg",
   Streamlit: "https://streamlit.io/images/brand/streamlit-mark-color.png",
   Pinecone: "TechStack/DatabasesNCloud/pinecone.svg",
+  "Next.js": "TechStack/Frontend/nextjs.svg",
+  TypeScript: "https://www.typescriptlang.org/favicon.ico",
+  "Tailwind CSS": "https://tailwindcss.com/favicon.ico",
+  Supabase: "TechStack/DatabasesNCloud/supabase.svg",
 };
 
 export const Project = () => {
