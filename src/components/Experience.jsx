@@ -4,13 +4,23 @@ export const Experience = () => {
   const experiences = [
     {
       id: 1,
+      logo: "Experience/upwork.png",
+      title: "AI Software Engineer - Freelance",
+      company: "Upwork",
+      duration: "May 2025 - Present",
+      description:
+        "Developed OCR pipelines using GPT-4.1 that reduced document parsing errors by 90% for logistics operations. Built interactive Retool dashboards with geospatial visualizations and migrated 10M+ land records to Supabase with real-time data synchronization.",
+      techStack: ["Python", "JavaScript", "Retool", "Supabase", "PostgreSQL"],
+    },
+    {
+      id: 2,
       logo: "Experience/moma.png",
       title: "ML/Software Engineer Intern",
       company: "MOMA Therapeutics",
       duration: "June 2024 - August 2024",
       description:
         "Built a classification system to compare LLMs vs. neural networks for predicting half-life and IC50 from SMILES strings. \
-            Achieved 70% accuracy in predicting cysteine ligandability, advancing covalent drug discovery. \
+            Achieved 70% accuracy in predicting cysteine ligandability using a GNN, advancing covalent drug discovery. \
             Enabled scientists to refine chatbot prompts through a Retool-based UI, improving research workflows.",
       techStack: [
         "Python",
@@ -22,7 +32,7 @@ export const Experience = () => {
       ],
     },
     {
-      id: 2,
+      id: 3,
       logo: "Experience/ids.jpg",
       title: "Research ML Fellow",
       company: "IDS Fellowship @ UMB",
@@ -36,8 +46,12 @@ export const Experience = () => {
 
   const techIcons = {
     Python: "TechStack/Backend/python.svg",
+    JavaScript: "TechStack/Frontend/javascript.svg",
     PyTorch: "TechStack/Backend/pytorch.svg",
     Keras: "TechStack/Backend/keras.svg",
+    Retool:
+      "https://raw.githubusercontent.com/2fasvg/2fasvg.github.io/master/assets/img/logo/retool.com/retool.com.svg",
+    Supabase: "TechStack/DatabasesNCloud/supabase.svg",
     "scikit-learn": "TechStack/Backend/scikitlearn.svg",
     PostgreSQL: "TechStack/DatabasesNCloud/postgresql.svg",
     "AWS S3": "TechStack/DatabasesNCloud/s3.svg",
@@ -85,9 +99,9 @@ export const Experience = () => {
 
               <div className="flex">
                 <div className="flex-grow pr-2 md:pr-6">
-                  <p className="text-sm md:text-base text-[var(--lightgray)]">
+                  <div className="text-sm md:text-base text-[var(--lightgray)]">
                     {description}
-                  </p>
+                  </div>
                 </div>
 
                 <div className="border-l border-gray-400 pl-6 flex flex-col gap-2">
