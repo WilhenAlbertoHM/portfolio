@@ -19,9 +19,10 @@ export const About = () => {
             />
           </h2>
           <p className="text-base md:text-lg mb-4 leading-relaxed text-wrap text-left">
-            Hola! I’m Wilhen Alberto Hui Mei, and I have over a year of
-            experience in building software and AI/ML applications. I use spoken
-            and programming languages to create a positive impact around us.
+            Hola! I’m Wilhen Alberto Hui Mei, and I have over 2 years of
+            experience building web apps, data pipelines, and AI workflows. I
+            use spoken and programming languages to create a positive impact
+            around us.
           </p>
         </div>
       </div>
